@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="298.361" Width="380.84">
+    <Window.Resources>
+        <LinearGradientBrush x:Key="brush1">
+            <GradientStop Color="#FF00FB00" Offset="0"/>
+            <GradientStop Color="#FFE81A36" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Resources>
+    <!--Comment-->
+    <Grid Background="#FFEDEEDE" Margin="0,0,2,1">
+        
+        <TextBlock Text="Hello WPF!" 
+                   FontSize="50" 
+                   TextWrapping="Wrap" 
+                   FontFamily="Georgia" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top"
+                   Foreground="{StaticResource brush1}" Margin="10,0,0,0"/>
+        <Button x:Name="b1" Content="Click me" 
+                Margin="10,57,0,0" 
+                Height="54" Width="96"
+                VerticalAlignment="Top" HorizontalAlignment="Left" 
+                Click="b1_Click"
+                />
+        <Image x:Name="image1" Width="250" Source="Images/giphy9.gif" Margin="10,57,0,0" Height="189" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+    </Grid>
+</Window>
